@@ -1,0 +1,2 @@
+export const myFunFacts = [ "I Like Winter More Than Summer", "I Like To Play And Watch Football", "I Am In My College Last Year", "I Love Coding",
+    "I Am A Really Quick Learner", "I Love To Read Books", "I Like To Watch Anime", "I Like To Play Video Games"]
