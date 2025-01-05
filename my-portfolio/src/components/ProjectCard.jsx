@@ -2,10 +2,10 @@ import * as React from "react";
 import Button from "./Button";
 import { redirect } from "react-router-dom";
 
-export default function ProjectCard({ name, description, image, url, stack }) {
+export default function ProjectCard({ name, description, image, url, stack, deployment }) {
   return (
     <div
-      className="flex flex-col text-base border border-gray max-w-[338px] bg-gray-800 mx-auto sm:mx-0 sm:max-w-[338px]"
+      className="flex  flex-col text-base border border-gray max-w-[338px] bg-gray-800 mx-auto sm:mx-0 sm:max-w-[338px]"
       data-aos="fade-up" // Animation on scroll
       data-aos-duration="1000" // Animation duration
       data-aos-easing="ease-in-out" // Easing function
@@ -40,7 +40,7 @@ export default function ProjectCard({ name, description, image, url, stack }) {
             className="text-white bg-purple-600 rounded hover:bg-purple-700"
             tabIndex={0}
           >
-            <Button text="Live <~>" onClick={() => {redirect(url)}} />
+            <Button text={deployment} onClick={() => {redirect(url)}} />
           </a>
         </div>
       </div>

@@ -4,8 +4,9 @@ export const projects = [
       name: 'Metaverse Web App',
       description: 'A collaborative virtual space allowing users to interact in real time with dynamic map creation, element interaction, and restriction-based navigation.',
       stack: ['Node.js', 'Express.js', 'React.js', 'PostgreSQL'],
-      image: '/projects/Metaverse.jpg',
-      url: 'https://github.com/Tej-Technologies/metaverse-web-app'
+      image: '/projects/ProjectMetaverse.jpg',
+      url: 'https://github.com/tejraval11/metaverse',
+      deployment: 'Github'
     },
     {
       id: 2,
@@ -13,7 +14,8 @@ export const projects = [
       description: 'A real-time multiplayer chess platform with automatic player matchmaking, game state management, and scalable architecture.',
       stack: ['Node.js', 'Express.js', 'React.js', 'MongoDB'],
       image: '/projects/ProjectChess.jpg',
-      url: 'https://github.com/Tej-Technologies/multiplayer-chess-game'
+      url: 'https://github.com/tejraval11/chess-multiplayer',
+      deployment: 'Github'
     },
     {
       id: 3,
@@ -21,7 +23,8 @@ export const projects = [
       description: 'An online collaborative whiteboard where users can draw, add text, and interact in real time. Features include admin controls and session management.',
       stack: ['Node.js', 'Express.js', 'React.js', 'PostgreSQL'],
       image: '/projects/Whiteboard.jpg',
-      url: 'https://github.com/Tej-Technologies/collaborative-whiteboard'
+      url: 'https://github.com/Tej-Technologies/collaborative-whiteboard',
+      deployment: 'Github'
     },
     {
       id: 4,
@@ -29,7 +32,8 @@ export const projects = [
       description: 'A robust task management system for enterprises with role-based access control, dynamic task allocation, and progress tracking across teams.',
       stack: ['Node.js', 'Express.js', 'React.js', 'MongoDB'],
       image: '/projects/TaskManagement.jpg',
-      url: 'https://github.com/Tej-Technologies/enterprise-task-management'
+      url: 'https://github.com/Tej-Technologies/enterprise-task-management',
+      deployment: 'Github'
     },
     {
       id: 5,
@@ -37,14 +41,17 @@ export const projects = [
       description: 'An e-commerce website built with Next.js and Tailwind CSS. Features include product listing, shopping cart, and search functionality.',
       stack: ['Next.js', 'Tailwind CSS'],
       image: '/projects/E-commerce.jpg',
-      url: 'https://github.com/Tej-Technologies/ecommerce'
+      url: 'https://github.com/tejraval11/mern-ecommerce',
+      deployment: 'Github'
     },
     {
       id: 6,
       name: 'Portfolio Website',
       description: 'A portfolio website built with React and Tailwind CSS. Features include responsive design, dynamic content, and animations.',
-      stack: ['React', 'Tailwind CSS'],
+      stack: ['React', 'Tailwind CSS', 'Firebase'],
       image: '/projects/PortfolioProject.jpg',
-      url: 'https://github.com/Tej-Technologies/portfolio'
+      url: 'https://github.com/Tej-Technologies/portfolio',
+      deployment: 'Live'
     },
+     
   ];

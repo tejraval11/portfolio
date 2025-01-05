@@ -75,6 +75,7 @@ export const Projects = () => {
             image={project.image}
             url={project.url}
             stack={project.stack}
+            deployment={project.deployment}
             data-aos="flip-up"
             data-aos-delay={`${index * 100}`} // Stagger animation for each project
           />

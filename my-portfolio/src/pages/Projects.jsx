@@ -42,6 +42,7 @@ const Projects = () => {
               image={project.image}
               url={project.url}
               stack={project.stack}
+              deployment={project.deployment}
               data-aos="flip-up"
               data-aos-delay={`${index * 100}`} // Delay each project slightly for staggered animation
             />
