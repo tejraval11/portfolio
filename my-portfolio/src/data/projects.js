@@ -44,7 +44,7 @@ export const projects = [
       name: 'Portfolio Website',
       description: 'A portfolio website built with React and Tailwind CSS. Features include responsive design, dynamic content, and animations.',
       stack: ['React', 'Tailwind CSS'],
-      image: '/projects/Portfolio.jpg',
+      image: '/projects/PortfolioProject.jpg',
       url: 'https://github.com/Tej-Technologies/portfolio'
     },
   ];
