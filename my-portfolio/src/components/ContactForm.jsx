@@ -22,6 +22,12 @@ const ContactForm = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
+    // Validation: Check if the message is empty
+    if (!formData.message.trim()) {
+      alert("Message cannot be empty.");
+      return;
+    }
+
     try {
       // Save message to Firestore
       await addDoc(collection(db, "messages"), {
@@ -41,54 +47,57 @@ const ContactForm = () => {
   };
 
   return (
-    <div className="mt-20 ">
-        <div className="w-full p-10 flex justify-center items-center">
+    <div className="mt-20">
+      <div className="w-full p-10 flex justify-center items-center">
         <h1 className="text-white text-4xl font-firacode font-bold">
-            Contact Me
+          Contact Me
         </h1>
+      </div>
+      <form
+        onSubmit={handleSubmit}
+        className="flex flex-col gap-4 text-white w-full max-w-md mx-auto"
+      >
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <input
+            className="p-2 bg-inherit border border-gray"
+            type="text"
+            placeholder="Name"
+            name="name"
+            value={formData.name}
+            onChange={handleChange}
+          />
+          <input
+            className="p-2 bg-inherit border border-gray"
+            type="email"
+            placeholder="Email"
+            name="email"
+            value={formData.email}
+            onChange={handleChange}
+          />
         </div>
-    <form onSubmit={handleSubmit} className="flex flex-col gap-4 text-white w-1/2 mx-auto">
-      <div className="grid grid-cols-2 gap-4">
-        <input
-          className="p-2 bg-inherit border border-gray"
-          type="text"
-          placeholder="Name"
-          name="name"
-          value={formData.name}
-          onChange={handleChange}
-        />
-        <input
-          className="p-2 bg-inherit border border-gray"
-          type="email"
-          placeholder="Email"
-          name="email"
-          value={formData.email}
-          onChange={handleChange}
-        />
-      </div>
-      <div>
-        <input
-          className="w-full p-2 bg-inherit border border-gray"
-          type="text"
-          placeholder="Title"
-          name="title"
-          value={formData.title}
-          onChange={handleChange}
-        />
-      </div>
-      <div>
-        <textarea
-          className="w-full p-2 h-40 bg-inherit border border-gray"
-          placeholder="Message"
-          name="message"
-          value={formData.message}
-          onChange={handleChange}
-        ></textarea>
-      </div>
-      <div>
-        <Button type="submit" text="Send" />
-      </div>
-    </form>
+        <div>
+          <input
+            className="w-full p-2 bg-inherit border border-gray"
+            type="text"
+            placeholder="Title"
+            name="title"
+            value={formData.title}
+            onChange={handleChange}
+          />
+        </div>
+        <div>
+          <textarea
+            className="w-full p-2 h-40 bg-inherit border border-gray"
+            placeholder="Message"
+            name="message"
+            value={formData.message}
+            onChange={handleChange}
+          ></textarea>
+        </div>
+        <div>
+          <Button type="submit" text="Send" />
+        </div>
+      </form>
     </div>
   );
 };

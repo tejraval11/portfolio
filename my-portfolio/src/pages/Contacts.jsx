@@ -13,7 +13,7 @@ const Contacts = () => {
       <div>
           <HomeContacts/>
       </div>
-      <div>
+      <div className='flex flex-col' data-aos="fade-up">
           <ContactForm/>
       </div>
     </div>

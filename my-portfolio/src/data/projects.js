@@ -12,7 +12,7 @@ export const projects = [
       name: 'Multiplayer Chess Game',
       description: 'A real-time multiplayer chess platform with automatic player matchmaking, game state management, and scalable architecture.',
       stack: ['Node.js', 'Express.js', 'React.js', 'MongoDB'],
-      image: '/projects/ChessGame.jpg',
+      image: '/projects/ProjectChess.jpg',
       url: 'https://github.com/Tej-Technologies/multiplayer-chess-game'
     },
     {
