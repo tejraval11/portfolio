@@ -22,8 +22,8 @@ export const projects = [
       name: 'Collaborative Whiteboard',
       description: 'An online collaborative whiteboard where users can draw, add text, and interact in real time. Features include admin controls and session management.',
       stack: ['Node.js', 'Express.js', 'React.js', 'PostgreSQL'],
-      image: '/projects/Whiteboard.jpg',
-      url: 'https://github.com/Tej-Technologies/collaborative-whiteboard',
+      image: '/projects/Project3.jpg',
+      url: 'https://github.com/tejraval11/Collaborative-Whiteboard/tree/main',
       deployment: 'Github'
     },
     {
