@@ -18,7 +18,7 @@ const Footer = () => {
         data-aos-duration="1000"
       >
         {/* Left Section: Name and Role */}
-        <div className='flex flex-col' data-aos="fade-up" data-aos-duration="1000">
+        <div className='flex flex-col items-center' data-aos="fade-up" data-aos-duration="1000">
           <span className='text-white text-lg'>
             Tej Raval <span className='text-gray ml-2'>ravaltej11@gmail.com</span>
           </span>
@@ -39,10 +39,8 @@ const Footer = () => {
       {/* Footer Text with animation */}
       <div className='flex justify-center items-center'>
         <p 
-          className='text-gray text-sm pt-10'
+          className='text-gray text-sm pt-2'
           data-aos="fade-in"
-          data-aos-duration="1000"
-          data-aos-delay="400"
         >
           © Copyright 2024. Made by Tej
         </p>
