@@ -1,5 +1,7 @@
 import React from 'react';
-
+import { FaGithub } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
+import { FaLinkedin } from "react-icons/fa";
 const Footer = () => {
   return (
     <div className='bg-bgDark font-firacode p-10 pb-0'>
@@ -27,9 +29,9 @@ const Footer = () => {
         <div className='flex flex-col w-full items-center' data-aos="fade-in" data-aos-duration="1000" data-aos-delay="200">
           <span className='font-semibold text-lg text-white'>Media</span>
           <div className='flex gap-4 pt-2 justify-center'>
-            <span className='text-white text-sm'>Instagram</span>
-            <span className='text-white text-sm'>Facebook</span>
-            <span className='text-white text-sm'>Twitter</span>
+            <a href="https://github.com/tejraval11/"><span className='text-white m-2 text-xl'><FaGithub /></span></a>
+            <a href="https://x.com/Ravaltej11"><span className='text-white m-2 text-xl'><FaXTwitter /></span></a>
+            <a href="https://www.linkedin.com/in/tej-raval-769241308/"><span className='text-white m-2 text-xl'><FaLinkedin className="text-gray" /></span></a>
           </div>
         </div>
       </div>

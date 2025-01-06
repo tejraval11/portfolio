@@ -43,7 +43,7 @@ const HomeContacts = () => {
           <div className="flex flex-col text-gray max-w-[280px] font-firacode mt-4 p-4 border border-gray">
             <p className="text-white pl-2">Message Me Here</p>
             <div className="flex items-center p-2">
-              <FaLinkedin className="text-gray text-2xl" />
+              <a href="https://www.linkedin.com/in/tej-raval-769241308/"><FaLinkedin className="text-gray text-2xl" /></a>
               <span className="pl-2">Tej Raval</span>
             </div>
             <div className="flex items-center p-2">
