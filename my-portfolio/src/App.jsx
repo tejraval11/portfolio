@@ -8,6 +8,7 @@ import Footer from './components/Footer';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { useEffect } from 'react';
+import { Analytics } from "@vercel/analytics/react"
 
 function App() {
   // Initialize AOS only once when the component is mounted
@@ -28,6 +29,7 @@ function App() {
     <>
       <div className="bg-bgDark px-28 custom-padding">
         {/* Router Setup */}
+        <Analytics />
         <Router>
           <Navbar />
           {/* Page Container */}
