@@ -7,6 +7,8 @@ import { SkillCard } from '../components/homepage/Skills';
 import { myFunFacts } from '../data/myFunFacts';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import Button from '../components/Button';
+import { redirect } from 'react-router-dom';
 
 const About = () => {
   useEffect(() => {
@@ -74,6 +76,10 @@ export const AboutMeLocal = () => {
           <p>{header}</p>
           <p>{para1}</p>
           <p>{para2}</p>
+          <div className='h-auto'>
+          <Button text="Download Resume" onClick ={() => {window.open('https://drive.google.com/file/d/15QtwNUEl1htLz6wbaySwRaxfI5bEaap9/view?usp=drive_link')}} data-aos="fade-right" data-aos-duration="1500" />
+          </div>
+            
         </div>
         
         {/* Right Section: Images */}
@@ -84,7 +90,8 @@ export const AboutMeLocal = () => {
             alt="About Me Illustration"
           />
           <img
-            className="w-[80%] sm:w-[270px] h-auto mt-4 hidden sm:block"
+            className="w-[80%] ml-2
+             sm:w-[270px] h-auto hidden sm:block"
             src="/Heropage/Line.png"
             alt="Line Decoration"
           />
