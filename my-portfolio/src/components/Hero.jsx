@@ -41,8 +41,8 @@ export const HeroText = () => {
       {/* Heading */}
       <div className="text-[24px] md:text-[32px] mt-6" data-aos="fade-up">
         <span className="text-white font-semibold">
-          Tej is a <span className="text-purple">web designer</span> <span>and</span>{' '}
-          <span className="text-purple">full-stack developer</span>
+          Tej is a <span className="text-purple"></span>{' '}
+          <span className="text-purple">full-stack web developer</span>
         </span>
       </div>
 
