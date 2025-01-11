@@ -77,7 +77,7 @@ export const AboutMeLocal = () => {
           <p>{para1}</p>
           <p>{para2}</p>
           <div className='h-auto'>
-          <Button text="Download Resume" onClick ={() => {window.open('https://drive.google.com/file/d/1m02JBhDW5OjdNra5Ihvmb2wgl0qy-Oey/view?usp=drive_link')}} data-aos="fade-right" data-aos-duration="1500" />
+          <Button text="Download Resume" onClick ={() => {window.open('https://drive.google.com/file/d/1J3pBRR6Ivz_HK9trwL2cTyy_bp74beFD/view?usp=sharing')}} data-aos="fade-right" data-aos-duration="1500" />
           </div>
             
         </div>
